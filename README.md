@@ -1,1 +1,1 @@
-Group project on simple shell.
+Group project on Simple Shell.
