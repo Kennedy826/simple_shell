@@ -1,6 +1,5 @@
 #include "shell.h"
 
-
 /**
 * get_history_file - gets the history file
 * @info: parameter struct
@@ -58,7 +57,6 @@ close(fd);
 return (1);
 }
 
-
 /**
 * read_history - reads history from file
 * @info: the parameter struct
@@ -72,11 +70,8 @@ ssize_t fd, rdlen, fsize = 0;
 struct stat st;
 char *buf = NULL, *filename = get_history_file(info);
 
-
 if (!filename)
 return (0);
-
-
 fd = open(filename, O_RDONLY);
 free(filename);
 if (fd == -1)
